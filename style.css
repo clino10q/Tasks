@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url(Hotel1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 100px;
+    height: 50px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: purple;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 68px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+}
+
+#whit{
+    color: white;
+}
+.hero-button{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-button:hover{
+    border: 1px solid purple;
+    background: purple;
+    transition: 1s;
+}
+
+nav .fa{
+    display: none;
+}
+
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 25px;
+    }
+
+    .text-box p{
+        font-size: 15px;
+    }
+
+    .nav-links ul li{
+        display: block;
+    }
+
+    .nav-links{
+        position: fixed;
+        background: purple;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -500px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul{
+        padding: 30px;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*---Rooms---*/
+
+
+.rooms
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+.room{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+
+.room img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.room p{
+    padding: 0;
+}
+
+.room h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/*Contact*/
+.bookie{
+    margin: 100PX auto;
+    width: 80%;
+    background-image: url(./Hotel2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.bookie h1{
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+/*Contact*/
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.location iframe{
+    width: 100%;
+}
+
+.contacts{
+    width: 80%;
+    margin: auto;
+}
+
+.contact{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+h4{
+    text-align: center;
+}
+
+.ppp{
+    text-align: center;
+}
+
+.contact div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact div .fa{
+    font-size: 28px;
+    color: purple;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact div p{
+    padding: 0;
+}
+
+.contact div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+
+.contact input, .contact textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+#purp{
+    border: 1px solid purple;
+    color: purple;
+}
+
+#purp:hover{
+    color: white;
+    transition: 0.4s;
+}

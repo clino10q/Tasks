@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uniform Hotels</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <section class="header" id="head">
+    <nav>
+        <a href="" ><img src="./Uni.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="#head">Home</a></li>
+                <li><a href="#roomie">Rooms</a></li>
+                <li><a href="#books">Bookings</a></li>
+                <li><a href="#reach">Contact us</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+        <h1>Welcome to Uniform Hotels</h1>
+        <p id="whit">The number one hotel in the whole world</p>
+        <a href="" class="hero-button">Book a room</a>
+    </div>
+    </section>
+    <!-----About-->
+    <!--cards-->
+    <section class="rooms" id="roomie">
+        <h1>Our rooms</h1>
+        <p>We have a wide variety of room for your pocket</p>
+        <div class="row">
+            <div class="room">
+                <img src="./Single 3.jpg" alt="Single rooms">
+                <h3>Single rooms</h3>
+                <p>A cozy and stylish space perfect for solo travelers. Our Single Room offers a comfortable bed, modern amenities, free Wi-Fi, and a private bathroom—everything you need for a relaxing stay.</p>
+            </div>
+             <div class="room">
+                <img src="./Double 1.jpg" alt="Single rooms">
+                <h3>Double rooms</h3>
+                <p>A comfortable room designed for two guests, featuring a double bed or twin beds. Includes free Wi-Fi, a TV, air conditioning, and a private bathroom—perfect for a relaxing stay.</p>
+            </div>
+             <div class="room">
+                <img src="./Deluxe 3.jpg" alt="Single rooms">
+                <h3>Deluxe rooms</h3>
+                <p>A spacious and stylish room with a comfortable bed and extra space to relax. Comes with free Wi-Fi, a TV, air conditioning, and a private bathroom for added comfort.</p>
+            </div>
+             <div class="room">
+                <img src="./Suite 3.webp" alt="Single rooms">
+                <h3>Suites</h3>
+                <p>A large and comfortable room with a separate living area and bedroom. Includes free Wi-Fi, a TV, air conditioning, and a private bathroom—ideal for guests who want more space and comfort.</p>
+            </div>
+        </div>
+    </section>
+    <!----Book a room-->
+    <section class="bookie" id="books">
+        <h1>Book a room for that's right for you now</h1>
+        <a href="" class="hero-button">Book a room</a>
+    </section>
+    <!----footer-->
+   <section class="location">
+    <h1>Contact Us</h1>
+    <p class="ppp">You can contact us for enquires and room-booking </p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d505074.3639875549!2d4.2565155029296875!3d8.509723835399154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10364d109d4e07c7%3A0x1830b22ba5cb184f!2sSasraj%20Supermarket!5e0!3m2!1sen!2sng!4v1774291838504!5m2!1sen!2sng" 
+    width="600" height="450" style="border:0;" allowfullscreen="" 
+    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </section>
+   <section class="contacts" id="reach"> 
+        <div class="roww">
+            <div class="contact">
+                <div>
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    <span>
+                        <h5>15, SasRaj road, Zango, Kwara</h5>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span>
+                        <h5>+234 911 351 9042</h5>
+                        <p>Monday to Saturday, 8am to 8pm</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <span>
+                        <h5>info@uniformhotels.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact">
+                <form action="">
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="email" placeholder="Enter E-mail address" required>
+                    <textarea  rows="8" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-button" id="purp">Send Message</button>
+                </form>
+            </div>
+            <p class="ppp">&copy Uniform 2026 | Ilelaboye Ayomide</p>
+        </div>
+    </section>
+    <!----Javascript-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-500px";
+        }
+    </script>
+</body>
+</html>
